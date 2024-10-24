@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        margin: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial;
+      }
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "nav nav nav"
+          "main main main"
+          "sidebar sidebar sidebar"
+          "advertising advertising advertising"
+          "footer footer footer";
+      }
+
       .nav1 {
         border-radius: 10px;
         padding: 20px;
         margin: 20px;
         background-color: rgb(211, 183, 22);
-       
       }
+        nav a {
+          color: purple;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      
       p {
         text-align: center;
         font-size: 30px;
@@ -22,7 +46,6 @@
         padding: 20px;
         margin: 20px;
         background-color: rgb(211, 183, 22);
-       
       }
 
       .nav3 {
@@ -30,7 +53,6 @@
         padding: 20px;
         margin: 20px;
         background-color: rgb(211, 183, 22);
-        
       }
 
       .nav4 {
@@ -38,7 +60,6 @@
         padding: 10px;
         margin: 10px;
         background-color: rgb(211, 183, 22);
-        
       }
 
       .nav5 {
@@ -46,7 +67,6 @@
         padding: 10px;
         margin: 10px;
         background-color: rgb(211, 183, 22);
-        
       }
 
       .nav6 {
@@ -54,7 +74,6 @@
         padding: 10px;
         margin: 10px;
         background-color: rgb(211, 183, 22);
-        
       }
     </style>
   </head>
@@ -64,7 +83,9 @@
     </nav>
     <nav class="nav2">
       <a href="position1.html"> nav1</a><br />
+      <br />
       <a href="position2.html"> nav2</a><br />
+      <br />
       <a href="position3.html"> nav3</a><br />
     </nav>
     <nav class="nav3">
