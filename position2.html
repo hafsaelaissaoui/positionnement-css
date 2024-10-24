@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+      }
+
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "nav nav nav"
+          "sidebar main main"
+          "advertising footer footer";
+        
+        gap: 10px;
+        padding: 10px;
+      }
+
+      header {
+        grid-area: header;
+         background-color: rgb(211, 183, 22);
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      nav {
+        grid-area: nav;
+        display: flex;
+        justify-content: space-around;
+         background-color: rgb(211, 183, 22);
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      nav a {
+        color: purple;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      aside {
+        grid-area: sidebar;
+         background-color: rgb(211, 183, 22);
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      main {
+        grid-area: main;
+         background-color: rgb(211, 183, 22);
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .advertising {
+        grid-area: advertising;
+        background-color: rgb(211, 183, 22);
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      footer {
+        grid-area: footer;
+         background-color: rgb(211, 183, 22);
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      p {
+        margin: 0;
+        font-size: 16px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p>The header</p>
+      </header>
+
+      <nav>
+        <a href="position1.html">Nav1</a>
+        <a href="position2.html">Nav2</a>
+        <a href="position3.html">Nav3</a>
+      </nav>
+
+      <aside>
+        <p>Sidebar</p>
+      </aside>
+
+      <main>
+        <p>Main article area</p>
+        <p>
+          In this layout, we display the areas in source order for any screen
+          less than 500 pixels wide. We go to a two column layout, and then to a
+          three column layout by redefining the grid, and the placement of items
+          on the grid.
+        </p>
+      </main>
+
+      <div class="advertising">
+        <p>Advertising</p>
+      </div>
+
+      <footer>
+        <p>The footer</p>
+      </footer>
+    </div>
+  </body>
+</html>
